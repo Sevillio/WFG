@@ -6,13 +6,13 @@ t =['Water', 'Fire', 'Grass']
 #assign a random play to the computer 
 computer = t[randint(0,2)]
 
-#set player to False
+#set the player to False
 player = False
 
 #set game to False 
 game = False 
 
-#Score 
+#Score and turns
 score = 0
 computerscore = 0
 finalscore = 3
@@ -79,6 +79,7 @@ while not game:
                 player = False
                 turn = turn+1
                 print(f"Player Score: {score}, Computer Score: {computerscore}, Turn: {turn}")
+            #Code below check the following scenario's to end the game
             if turn >= max_turn:
                  game = True 
                  break
